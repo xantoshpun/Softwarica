@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etUsername.getText().toString().equals("s") && etPassword.getText().toString().equals("s")) {
+                if (etUsername.getText().toString().equals("softwarica") && etPassword.getText().toString().equals("coventry")) {
                     Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
                     startActivity(intent);
                     finish();

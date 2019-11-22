@@ -5,66 +5,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A3EAEBF7"
-    android:gravity="center"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/softwarica"/>
+        android:src="@drawable/softwarica" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Login form"
+        android:text="Welcome to App"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/poiret_one" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Login"
         android:textColorHighlight="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:fontFamily="@font/poiret_one"
-        android:layout_margin="10dp"/>
+        app:fontFamily="@font/poiret_one" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUsername"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:hint="Username"
-
-            android:textSize="15sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:hint="Password"
-
-            android:inputType="textPassword"
-            android:textSize="15sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btnLogin"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Login"
-        android:textStyle="bold"
-        app:fontFamily="@font/poiret_one"
-        android:textColor="#FFFFFF"
-        android:background="#166AC4"/>
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Username"
+                android:textColor="@color/colorBlue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poiret_one" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                app:fontFamily="@font/poiret_one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Password"
+                android:textColor="@color/colorBlue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poiret_one" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                app:fontFamily="@font/poiret_one" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_ui"
+                android:text="Login"
+                android:textStyle="bold"
+                app:fontFamily="@font/poiret_one" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
